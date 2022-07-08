@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/main.css">
+    <title>Let's Play</title>
+</head>
+<body>
+    <div class="container mx-auto pt-4 text-center text-">
+        <h1 class="text-4xl font-bold text-zinc-700">
+Dice Bludclart Game
+        </h1>
+        <p class="text-md italic text-red-400 font-bold">
+            pretty much the first player to hit the score of 30!
+        </p>
+    </div>
+    <div class="container w-5/6 mx-auto rounded-md text-center md:max-w-xl my-24 shadow-lg shadow-black">
+        <h1 class="pt-12 player-turn font-bold text-2xl">
+            Player 1 Turn
+        </h1>
+        <div class=" py-8 flex justify-center space-x-24">
+            <div class="space-y-2">
+                <h4 class="text-2xl font-bold">Score: <span class="score-board-1">0</span></h4>
+                <p class="font-bold text-4xl bg-teal-400 px-8 py-4 rounded-md first-player-roll-value inline-block">
+                    -
+                </p>
+            </div>
+            <div class="space-y-2">
+                <h4 class="text-2xl font-bold ">Score: <span class="score-board-2">0</span></h4>
+                <p class="font-bold text-4xl bg-teal-400 px-8 py-4 rounded-md second-player-roll-value score-board-2 inline-block">
+                    -
+                </p>
+            </div>
+        </div>
+        <div class="btn-container py-8">
+            <button  class="bg-teal-800 text-white roll-btn text-2xl font-serif px-6 py-2 font-bold shadow-md shadow-teal-400 rounded-md hover:bg-teal-400 hover:scale-x-110 hover:shadow-teal-900">
+                Roll Dice
+            </button>
+            <button type="reset" class="bg-teal-800 text-white w-[160px] h-[48] text-2xl px-6 py-2 font-bold reset-btn shadow-md shadow-black hidden rounded-md hover:bg-teal-400 hover:scale-x-110 hover:shadow-teal-900">
+                Reset
+            </button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
